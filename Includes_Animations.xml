@@ -6,43 +6,53 @@
 <!-- HomeScreen animations -->
 	<include name="Animation_homescroller">
 		<animation type="Focus" reversible="false">
-			<effect type="fade" start="50" end="100" time="500" delay="0"/>
-			<effect type="zoom" start="0,0,750,150" end="100" center="auto" time="200" delay="0"/>
+			<effect type="fade" start="0" end="100" time="600" delay="0"/>
+			<effect type="slide" start="-150,0" end="0,0" center="auto" time="900" tween="cubic" easing="out" />
+
+		</animation>
+	</include>
+
+	<include name="Animation_homescrollerbutton">
+		<animation type="Focus" reversible="false">
+			<effect type="fade" start="0" end="100" time="500" delay="200" tween="cubic" easing="in"/>
+			<effect type="slide" start="50,0" end="0,0" time="800" tween="cubic" easing="out" delay="100" />
+
 		</animation>
 	</include>
 	
 	<include name="Animation_homebigfont">
 		<animation type="Conditional" condition="Container(300).HasFocus(1)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
+			<effect type="fade" start="0" end="80" time="1000" delay="0"/>
+			<effect type="slide" start="1500,0" end="0,0" time="600" tween="cubic" easing="out" />
+
 		</animation>
 		<animation type="Conditional" condition="Container(300).HasFocus(2)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
+			<effect type="fade" start="0" end="80" time="1000" delay="0"/>
+			<effect type="slide" start="1500,0" end="0,0" time="600" tween="cubic" easing="out" />
 		</animation>
 		<animation type="Conditional" condition="Container(300).HasFocus(3)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
+			<effect type="fade" start="0" end="80" time="1000" delay="0"/>
+			<effect type="slide" start="1500,0" end="0,0" time="600" tween="cubic" easing="out" />
 		</animation>
 		<animation type="Conditional" condition="Container(300).HasFocus(4)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
+			<effect type="fade" start="0" end="80" time="1000" delay="0"/>
+			<effect type="slide" start="1500,0" end="0,0" time="600" tween="cubic" easing="out" />
 		</animation>
 		<animation type="Conditional" condition="Container(300).HasFocus(5)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
+			<effect type="fade" start="0" end="80" time="1000" delay="0"/>
+			<effect type="slide" start="1500,0" end="0,0" time="600" tween="cubic" easing="out" />
 		</animation>
 		<animation type="Conditional" condition="Container(300).HasFocus(6)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
+			<effect type="fade" start="0" end="80" time="1000" delay="0"/>
+			<effect type="slide" start="1500,0" end="0,0" time="600" tween="cubic" easing="out" />
 		</animation>
 		<animation type="Conditional" condition="Container(300).HasFocus(7)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
+			<effect type="fade" start="0" end="80" time="1000" delay="0"/>
+			<effect type="slide" start="1500,0" end="0,0" time="600" tween="cubic" easing="out" />
 		</animation>
 		<animation type="Conditional" condition="Container(300).HasFocus(8)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
+			<effect type="fade" start="0" end="80" time="1000" delay="0"/>
+			<effect type="slide" start="1500,0" end="0,0" time="600" tween="cubic" easing="out" />
 		</animation>
 	</include>
 	

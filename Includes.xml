@@ -7,43 +7,55 @@
 	
 <!-- Czar's edit -->
 	<include name="home1">
-		<control type="wraplist" id="300">
+		<control type="fixedlist" id="300">
 			<posx>180</posx>
 			<posy>-20</posy>
 			<height>950</height>
-			<width>900</width>
+			<width>1900</width>
 			<onup>300</onup>
 			<ondown>300</ondown>
 			<onleft>7000</onleft>
 			<onright>7000</onright>
 			<viewtype>list</viewtype>
-			<scrolltime>300</scrolltime>
+			<scrolltime>400</scrolltime>
 			<orientation>vertical</orientation>
 			<focusposition>3</focusposition>
 			<preloaditems>3</preloaditems>
 				
-			<itemlayout width="400" height="110">
+			<itemlayout width="900" height="110">
 				<control type="label">			
-					<posx>450</posx>
+					<posx>380</posx>
 					<posy>0</posy>
 					<width>900</width>
 					<height>100</height>
 					<aligny>center</aligny>
-					<align>center</align>
+					<align>left</align>
 					<font>Font_HomeNotSelected</font>
 					<textcolor>ListTitleNF</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Label]</label>
 				</control>			
 			</itemlayout>
-			<focusedlayout width="900" height="110">
+			<focusedlayout width="1900" height="110">
+				<control type="image">
+					<width>170</width>
+					<height>150</height>
+				    <aligny>center</aligny>
+					<align>center</align>
+					<posx>250</posx>
+					<posy>-20</posy>
+					<aspectratio scalediffuse="true">keep</aspectratio>
+					<texture>mainmenu/homebutton.png</texture>
+					<include>Animation_homescrollerbutton</include>
+				</control>			
+			
 				<control type="label">
 					<posx>450</posx>
 					<posy>0</posy>
 					<width>750</width>
 					<height>100</height>
 					<aligny>center</aligny>
-					<align>center</align>
+					<align>left</align>
 					<font>Font_HomeSelected</font>
 					<textcolor>ListTitleF</textcolor>
 					<selectedcolor>ListTitleF</selectedcolor>					
@@ -52,7 +64,7 @@
 				</control>
 			</focusedlayout>
 			<content>
-				<item id="1">				
+				<item id="1">						
 					<label>PROGRAMS</label>
 					<label2>PROGRAMS</label2>
 					<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
