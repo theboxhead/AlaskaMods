@@ -14,18 +14,21 @@
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 
-		<control type="label">
-			<posx>-320</posx>
-			<posy>220</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>$INFO[Container(300).ListItem.Label]</label>
-			<font>Font_MainMenu</font>
-			<textcolor>MainMenu</textcolor>
-			<include>Animation_CommonFade</include>			
-		</control>
-
+			<control type="label">
+				<posx>-320</posx>
+				<posy>220</posy>
+				<width>1920</width>
+				<angle>0</angle>
+				<align>center</align>
+				<aligny>top</aligny>
+				<visible>Container(300).HasFocus(1) | Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(6) | Container(300).HasFocus(7) | Container(300).HasFocus(8)</visible>
+				<label>$INFO[Container(300).ListItem.Label]</label>
+				<font>Font_MainMenu</font>
+				<textcolor>MainMenu</textcolor>
+				<include>Animation_homebigfont</include>
+			</control>
+	
+	
 		<include condition="!Skin.HasSetting(althome)">home1</include>
 		<include condition="Skin.HasSetting(althome)">home2</include>
 
