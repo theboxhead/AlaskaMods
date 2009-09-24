@@ -1,0 +1,38 @@
+<!--Alaska-->
+
+<window id="0">
+	<defaultcontrol always="true">300</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>Global_Filter</include>
+
+		<control type="label">
+			<include>WindowID</include>
+			<label>Home.xml</label>
+			<visible>Skin.HasSetting(debugmode)</visible>
+		</control>
+
+		<control type="label">
+			<posx>-320</posx>
+			<posy>220</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>$INFO[Container(300).ListItem.Label]</label>
+			<font>Font_MainMenu</font>
+			<textcolor>MainMenu</textcolor>
+			<include>Animation_CommonFade</include>			
+		</control>
+
+		<include condition="!Skin.HasSetting(althome)">home1</include>
+		<include condition="Skin.HasSetting(althome)">home2</include>
+
+		<include>Global_Time</include>
+		<include>Global_RSS</include>
+
+		<include>Object_DebugGrid</include>
+
+	</controls>
+</window>
